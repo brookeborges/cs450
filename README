@@ -1,0 +1,8 @@
+This makefile builds two executables:
+
+- pipe_demo.x demonstrates how to fork two processes and connect them with a pipe.
+  It is hard-coded to run the command "who | wc -l"
+
+- pipes.x has a sample outer loop for the shell. It allows the user to enter input
+  until they hit Ctrl-D, calls a helper function to split each input line into a list
+  of words (that is, tokens separated by whitespace), and prints the list.
